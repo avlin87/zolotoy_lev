@@ -1,6 +1,7 @@
 package org.cafeM5.zolotoy_lev.domain.entity;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import javax.persistence.*;
 import java.util.List;
@@ -11,8 +12,9 @@ import java.util.UUID;
  *
  * @author Aleksandr Liadov
  */
-@Entity
+//@Entity
 @Data
+@Accessors(chain = true)
 public class Meal {
 
     @Id

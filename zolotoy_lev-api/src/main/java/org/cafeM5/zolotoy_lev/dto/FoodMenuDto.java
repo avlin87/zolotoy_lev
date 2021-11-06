@@ -7,12 +7,15 @@ import java.util.Date;
 import java.util.UUID;
 
 /**
- * MealDto
+ * FoodMenuDto
  *
  * @author Aleksandr Liadov
  */
 @Data
 @Accessors(chain = true)
-public class MealDto {
+public class FoodMenuDto {
 
+    private UUID id;
+    private String menuName;
+    private Date creationDate;
 }

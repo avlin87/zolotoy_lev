@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+  - changeSet:
+      id: foodMenu-1.0
+      author: Aleksandr Liadov
+      changes:
+        - createTable:
+            tableName: FoodMenu
+            columns:
+              - column:
+                  name: Id
+                  type: uuid
+                  constraints:
+                    defaultValue: uuid_generate_v4 ()
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: CreationDate
+                  type: timestamp
+              - column:
+                  name: MenuName
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
