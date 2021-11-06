@@ -1,0 +1,14 @@
+# Project exclude paths
+/target/
+/LOG/
+/out/
+/zolotoy_lev-impl/LOG
+/zolotoy_lev-impl/target
+/zolotoy_lev-api/LOG
+/zolotoy_lev-api/target
+/zolotoy_lev-db/LOG
+/zolotoy_lev-db/target
+
+### IntelliJ IDEA ###
+.idea
+*.iml
